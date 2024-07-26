@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="software.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <main>
+        <nav>
+                <ul>
+                    <li class="logo"><img src="logo-de-removebg-preview.png" style="margin-left: 10px; width: 100px; height: 50px; "alt=""></li>
+                    <li class="navbar-right"><a href="#">Projects</a></li>
+                    <li class="navbar-right"><a href="#">Cources</a>
+                      <ul class="sub-course">
+                        <li>Game Development</li>
+                        <li>App Development</li>
+                        <li>Web Development</li>
+                        <li>Dot Net Framework</li>
+                        <li>Software Development</li>
+                      </ul>
+                    </li>
+                    <li class="navbar-right"><a href="#">Contact us</a>
+                    <div class="contect-us">
+                        <div class="conte">
+                            <img class="us"src="contect.jpg" alt="">
+                            <h6>Abdul Mateen <br> Web developer</h6>
+                        </div>
+                        <div class="conte">
+                            <img class="us"src="contect.jpg" alt="">
+                            <h6>Muhammad Hadi <br> Game developer</h6>
+                        </div>
+                        <div class="conte">
+                            <img class="us"src="contect.jpg" alt="">
+                            <h6>Ali Asghar <br> Game developer</h6>
+                        </div>
+                        <div class="conte">
+                            <img class="us"src="contect.jpg" alt="">
+                            <h6>Kareem ullah <br> App developer</h6>
+                        </div>
+                        <div class="conte">
+                            <img class="us"src="contect.jpg" alt="">
+                            <h6>Aurang Zaib <br> Dot Net developer</h6>
+                        </div>
+                        <div class="conte">
+                            <img class="us"src="contect.jpg" alt="">
+                            <h6>Yasir Ahmed <br> software developer</h6>
+                        </div>
+                    </div>
+                    </li>
+                    <li class="navbar-right"><a href="#">About us</a>
+                        <div class="about">
+                            <div class="content-about">
+                            <h3 class="about-head">Who We Are and What We Do?</h3>
+                            <p>Software House’s passionate team of industry experts provide physical security solutions that meet the ever-evolving challenges of today’s modern enterprises. 
+                               For over 3 years, Our team is expert and well-trained in their work. The world’s largest organizations and government entities have trusted us to deliver secure, flexible, and compliant solutions.                   
+                               Our goal is simple: Empower organizations to give best skills to our people and property while giving them the tools required to be more productive.</p>
+                            </div>
+                            <div class="image-about">
+                                <img src="sw.jpg" alt="">
+                            </div>
+                        </div>
+                    </li>
+                    <li  class="navbar-right"><a onclick=showsignpage() href="#">Sign up</a></li>
+                    <li onclick=showsidebar() class="hidemenu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M3 4H21V6H3V4ZM9 11H21V13H9V11ZM3 18H21V20H3V18Z"></path></svg></a></li> 
+                </ul>
+                <ul class="sidebar">
+                    <li><a onclick=hidesidebar() class="close" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Cources</a>
+                    </li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+        </nav>
+        <div class="navsignup">
+            <a onclick=hidesignup() href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <div class="container-sign">
+                    <div class="sign-up">
+                    <h5>Email</h5>
+                    <input class="input-sign" type="email" name="" id="">                
+                </div>
+                    <div class="password">
+                        <h5>Password</h5>
+                        <input class="input-sign" type="password" name="" id="">
+                    </div>                    
+            </div>
+            <div class="btn-si-ri">
+            <button class="btn-sign">Sign up</button>
+                <button class="btn-regis">Register</button>
+            </div>
+        </div>
+        <div class="content">
+            <h2>Deliver software solutions that drive change <span> months faster </span></h2>
+            <p >We help technology-first companies deliver software and business value <span> faster </span> by bringing in best development practices and skills that unblock in-house teams.</p>
+        </div>
+        <div class="work owl-carousel owl-theme">
+                <div class="items" style="background-image: url(game.jpg);">
+                    <div class="slider-cont">
+                        <div class="slider-cont-head">
+                  <h3 class="slider-head">Game development</h3>
+                  <p>It is the process of creating video games, involving design, coding, art, sound, and testing. To learn game development, start by studying game design principles, learning programming languages like C# or C++, and using game engines such as Unity or Unreal Engine. Practice by building simple games and iterating on them.</p>
+                  </div>
+                  <div class="slider-cont-ref">
+                  <a class="href-regist" href="#">Register Now</a>
+                  </div>
+                </div>
+                </div>
+                <div class="items" style="background-image: url(software-developer.webp);">
+                    <div class="slider-cont">
+                        <div class="slider-cont-head">
+                  <h3 class="slider-head">Software development</h3>
+                  <p>It involves designing, coding, testing, and maintaining software applications or systems. To learn software development, focus on mastering programming languages, understanding software engineering principles, and practicing problem-solving through real-world projects and continuous learning.</p>
+                  </div>
+                  <div class="slider-cont-ref">
+                  <a class="href-regist" href="#">Register Now</a>
+                  </div>
+                </div>
+                </div>
+                <div class="items" style="background-image: url(web-develop.webp);">
+                    <div class="slider-cont">
+                        <div class="slider-cont-head">
+                  <h3 class="slider-head">Web development</h3>
+                  <p>It involves building and maintaining websites, focusing on front-end, back-end, or full-stack development. To learn web development, start with HTML, CSS, and JavaScript for front-end skills, and explore server-side languages like Python, PHP, or Node.js for back-end development. Practice by creating and deploying your own web projects.</p>
+                  </div>
+                  <div class="slider-cont-ref">
+                  <a class="href-regist" href="#">Register Now</a>
+                  </div>
+                </div>
+                </div>
+                <div class="items" style="background-image: url(app.webp);">
+                    <div class="slider-cont">
+                        <div class="slider-cont-head">
+                  <h3 class="slider-head">App development</h3>
+                  <p>It involves creating software applications for mobile devices or desktops, focusing on user interface, functionality, and performance. To learn app development, start by mastering programming languages like Java, Swift, or Kotlin, and use frameworks such as React Native or Flutter. Practice by building and iterating on simple apps.</p>
+                  </div>
+                  <div class="slider-cont-ref">
+                  <a class="href-regist" href="#">Register Now</a>
+                  </div>
+                </div>
+                </div>
+                <div class="items" style="background-image: url(net.webp);">
+                    <div class="slider-cont">
+                        <div class="slider-cont-head">
+                  <h3 class="slider-head">Dot NET development</h3>
+                  <p>It involves creating applications using the .NET framework, which supports multiple programming languages like C# and VB.NET. To learn .NET development, focus on understanding the framework's libraries and tools, mastering C#, and practicing by building web, desktop, or mobile applications using Visual Studio and .NET Core/ASP.NET.</p>
+                  </div>
+                  <div class="slider-cont-ref">
+                  <a class="href-regist" href="#">Register Now</a>
+                  </div>
+                </div>
+                </div>
+                <div class="items" style="background-image: url(dv.jpg);">
+                    <div class="slider-cont">
+                        <div class="slider-cont-head">
+                  <h3 class="slider-head"><img style="width: 300px; height: 200px;" src="logo-de-removebg-preview.png" alt=""></h3>
+                  <p></p>
+                  </div>
+                  <div class="slider-cont-ref">
+                  <a class="href-regist" href="#">Register Now</a>
+                  </div>
+                </div>
+                </div>
+        </div>
+        <div class="star-software-scor">
+            <div class="star-software">
+                <div class="star-software-head">
+                <div class="star">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                </div>
+                <div class="software.soc">
+                    <p style="font-weight: 400;">The Software House was <b> extremely well-prepared </b> from the very beginning.</p>
+                </div>
+            </div>
+            <div class="star-software-head">
+                <div class="star">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+                </div>
+                <div class="software.soc">
+                    <p style="font-weight: 400;">The project is <b>a grand success </b>. The user feedback is <b> absolutely overwhelming.</b></p>
+                </div>
+            </div>
+            <div class="star-software-head">
+                <div class="star">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26ZM12.0006 15.968L16.2473 18.3451L15.2988 13.5717L18.8719 10.2674L14.039 9.69434L12.0006 5.27502L9.96214 9.69434L5.12921 10.2674L8.70231 13.5717L7.75383 18.3451L12.0006 15.968Z"></path></svg>
+                </div>
+                <div class="software.soc">
+                    <p style="font-weight: 400;">The Software House delivered a <b> robust solution</b> with     <b>high-quality code</b>.</p>
+                </div>
+            </div>
+            </div>
+            <div class="scor">
+                <div class="scor-head">
+                    <p style="font-size: 1.8rem;"><b>Our Net Promoter Score for H1 2023 is exactly</b></p>
+                    <p style="font-size: 0.8rem;">CustomerGauge’s study of 776 B2B companies set the median NPS for an IT service company at 40.</p>
+                </div>
+                <div class="scor-foter">
+                    <p style="font-size:7rem; color: rgb(0, 255, 0); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  text-align: center;"><b>36</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="company-over">
+            <div class="company-over-head">
+                <p ><b>Over 160 companies built efficient and flexible cloud-based solutions with us</b></p>
+            </div>
+            <div class="company-over-footer">
+                <a style="text-decoration: none; color: blue; " href="#">Browse case studies</a>
+            </div>
+        </div>
+        <div class="project-hed">
+            <h1>Projects</h1>
+        </div>
+        <div class="projects">
+            <div class="project-container">
+                <div class="project-image" >
+                    <img src="wikipedia.jpg" alt="">
+                </div>
+                <div class="project-content">
+                    <div class="project-name"><h3> Wikipedia</h3></div>
+                    <div class="about-project-con"><p>My team member,<b>Abdul Mateen</b>, played a crucial role in helping the <b> Wikipedia team </b> improve their content management system. Their expertise in web development and collaborative spirit enabled the team to streamline their processes and enhance the overall user experience. We're proud to have contributed to the world's largest online encyclopedia!</p></div>
+                    <div class="project-rating">
+                        <div class="project-rat-st">
+                        <div class="str-rat">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg><h4>5/5</h4>
+                        </div>
+                        <div class="rat">
+                        <p>project rating</p>
+                        </div>
+                        </div>
+                        <div class="explore-project">
+                            <a href="#">Explore Now</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="20px" viewBox="0 0 24 24" fill="blue"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-image" >
+                    <img src="overwatch.jpg" alt="">
+                </div>
+                <div class="project-content">
+                    <div class="project-name"><h3> Overwatch</h3></div>
+                    <div class="about-project-con"><p>Our team member,<b> Muhammad Hadi Naeem </b>, played a crucial role in developing the hero 'Mercy' for <b> Overwatch </b>. Their expertise in character design and animation brought this beloved hero to life, making Overwatch a top-rated team-based shooter game!</p></div>
+                    <div class="project-rating">
+                        <div class="project-rat-st">
+                            <div class="str-rat">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg><h4>5/5</h4>
+                        </div>
+                        <div class="rat">
+                        <p>project rating</p>
+                        </div>
+                        </div>
+                    <div class="explore-project">
+                        <a href="#">Explore Now</a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="20px" viewBox="0 0 24 24" fill="blue"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+                    </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-image" >
+                    <img src="Duolingo.jpg" alt="">
+                </div>
+                <div class="project-content">
+                    <div class="project-name"><h3>Duolingo</h3></div>
+                    <div class="about-project-con"><p>My team member,<b> Kareem Ullah</b>, was a vital part of the Duolingo development team. They helped design and implement the popular language-learning app's gamification features, making learning fun and engaging for millions of users worldwide. Their contributions have made <b> Duolingo</b> a leader in the education app space!</p></div>
+                    <div class="project-rating">
+                        <div class="project-rat-st">
+                            <div class="str-rat">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg><h4>5/5</h4>
+                        </div>
+                        <div class="rat">
+                        <p>project rating</p>
+                        </div>
+                        </div>
+                     <div class="explore-project">
+                            <a href="#">Explore Now</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="20px" viewBox="0 0 24 24" fill="blue"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="project-show">
+                <div onclick=showmore() class="more">
+                    <h5>Show more </h5>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16L6 10H18L12 16Z"></path></svg>
+                </div>
+                <div onclick=showless() class="less">
+                    <h5>Show less</h5>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="currentColor"><path d="M12 8L18 14H6L12 8Z"></path></svg>
+                </div>                
+            </div>
+            <div class="project-more">
+            <div class="project-container">
+                <div class="project-image" >
+                    <img src="miecraft.jpg" alt="">
+                </div>
+                <div class="project-content">
+                    <div class="project-name"><h3>Minecraft</h3></div>
+                    <div class="about-project-con"><p>My team member,<b>Ali Asghar</b>, was a key contributor to the Minecraft development team. They helped design and implement new features, ensuring a seamless gaming experience for millions of players worldwide. Their dedication and creativity have made <b> Minecraft</b> one of the most popular games of all time!</p></div>
+                    <div class="project-rating">
+                        <div class="project-rat-st">
+                            <div class="str-rat">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg><h4>5/5</h4>
+                        </div>
+                        <div class="rat">
+                        <p>project rating</p>
+                        </div>
+                        </div>
+                     <div class="explore-project">
+                            <a href="#">Explore Now</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="20px" viewBox="0 0 24 24" fill="blue"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-image" >
+                    <img src="Adobe Photoshop.jpg" alt="">
+                </div>
+                <div class="project-content">
+                    <div class="project-name"><h3>Adobe Photoshop</h3></div>
+                    <div class="about-project-con"><p>My team member,<b>Yasir Ahmed</b>, was a key contributor to the <b> Adobe Photoshop</b> development team. They helped design and implement new features, such as the 'Content-Aware Fill' tool, which has revolutionized the way designers and artists work with images. Their dedication and expertise have made Photoshop the industry standard for raster graphics editing.</p></div>
+                    <div class="project-rating">
+                        <div class="project-rat-st">
+                            <div class="str-rat">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg><h4>5/5</h4>
+                        </div>
+                        <div class="rat">
+                        <p>project rating</p>
+                        </div>
+                        </div>
+                     <div class="explore-project">
+                            <a href="#">Explore Now</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="20px" viewBox="0 0 24 24" fill="blue"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-image" >
+                    <img src="Entity Framework.jpg" alt="">
+                </div>
+            <div class="project-content">
+                <div class="project-name"><h3>Entity Framework</h3></div>
+                <div class="about-project-con"><p>Our team member,<b>Aurang Zaib Malkana</b>, played a crucial role in developing <b>Entity Framework</b>, a popular .NET ORM (Object-Relational Mapping) tool. Their expertise in database design and .NET development enabled our team to build efficient data access layers and robust data models.</p></div>
+                <div class="project-rating">
+                    <div class="project-rat-st">
+                        <div class="str-rat">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg><h4>5/5</h4>
+                    </div>
+                    <div class="rat">
+                    <p>project rating</p>
+                    </div>
+                </div>
+                    <div class="explore-project">
+                            <a href="#">Explore Now</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="20px" viewBox="0 0 24 24" fill="blue"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+                        </div> 
+                </div>
+            </div>
+            </div>
+            <div class="project-container">
+                <div class="project-image" >
+                    <img src="tabacco.jpg" alt="">
+                </div>
+            <div class="project-content">
+                <div class="project-name"><h3>Tambacco Max</h3></div>
+                <div class="about-project-con"><p>Our team member,<b>Shahwaiz Wadera</b>, played a crucial role in developing <b>Tambacco Max</b>, a popular web, software and app. Their expertise in database design and development enabled our team to build efficient data access layers and robust data models.
+                <b>Best thing is that he is our software house directer</b></p></div>
+                <div class="project-rating">
+                    <div class="project-rat-st">
+                        <div class="str-rat">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:20px; height:20px;"><path d="M12.0006 18.26L4.94715 22.2082L6.52248 14.2799L0.587891 8.7918L8.61493 7.84006L12.0006 0.5L15.3862 7.84006L23.4132 8.7918L17.4787 14.2799L19.054 22.2082L12.0006 18.26Z"></path></svg><h4>5/5</h4>
+                    </div>
+                    <div class="rat">
+                    <p>project rating</p>
+                    </div>
+                </div>
+                    <div class="explore-project">
+                            <a href="#">Explore Now</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="20px" viewBox="0 0 24 24" fill="blue"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg>
+                        </div> 
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="tech">
+            <h1>The technology community <br> knows us as educators</h1>
+            <p class="tech-con">Just like you, we choose scalable and flexible technologies. The engineering mindset our talents have already solved the challenges of 160+ clients. Unsure how to lead development forward? Your future team will guide you to the most optimal software solutions and strategies.</p>
+        </div>
+        <div class="work-cto">
+            <div class="work-cto-con">
+                <h1>Work with teams CTOs praise as “super-friendly” and “reliable”</h1>
+            </div>
+            <div class="book-now">
+                <a href="#">Book for free <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path></svg></a>
+            </div>
+        </div>
+        <div class="faq-session">
+            <h1 class="faq-head">Frequently Asked Question</h1>
+            <div class="faq-container-qa">
+            <div class="faq-container">
+                <div class="faq-question">
+                    <div class="question-head">
+                    <h5>Why should I consider your software development company as a partner?</h5>
+                    </div>
+                    <div class="quetion-icon">
+                    <svg class="question-more" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+                    <svg class="question-less" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M5 11V13H19V11H5Z"></path></svg>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>Because we have 220+ technology talents that can assist you with product development at any stage of the project. Explore our case studies to discover how our partnerships of 4 months to 5 years made businesses in 24 countries measurably competitive. Our About us page will show you who we are at heart and what we believe in. <br> <br>
+                        Also, do consider our Clutch reviews from CTOs, Product Owners, and Software Strategists who’ve delivered high-stakes projects with our development teams. Most opinion about our software solutions comes from phone interviews made by independent researchers.
+                        <br>
+                        Have you heard Clutch ranked The Software House as the top custom software development company of 2020 in Poland?
+                        <br>
+                        Then, you could schedule a free and private call about your development needs to see if we have a culture fit.</p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-question">
+                    <div class="question-head">
+                    <h5>Do you offer custom software development services for my industry?</h5>
+                    </div>
+                    <div class="quetion-icon">
+                    <svg class="question-more" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+                    <svg class="question-less" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M5 11V13H19V11H5Z"></path></svg>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>We’re open to working with any industry. as our team’s strategy, project management, and development skills proved to be effective in blockchain, MedTech, or even government projects. <br> <br>
+                        
+                        The Software House has even provided support to other custom software development companies.
+                        <br>
+                        There are of course industries for which we offer more refined experience and they include: Events; FinTech and banking; Travel; Marketplaces; Real estate, Marketing; Logistics & Transportation. Visit the Industries page to learn about our project expertise in these fields.</p>
+                </div>
+            </div> 
+            <div class="faq-container">
+                <div class="faq-question">
+                    <div class="question-head">
+                    <h5>What’s your experience in enterprise software development?</h5>
+                    </div>
+                    <div class="quetion-icon">
+                    <svg class="question-more" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+                    <svg class="question-less" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M5 11V13H19V11H5Z"></path></svg>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>We’ve done custom software development for businesses of over 500+ employees. The largest software suite we’ve prepared was adopted by 7M users from several countries.
+                        <br>
+                        Most of the time, we’re developing custom software for clients.
+                        <br>
+                        Our enterprise software projects included: building an e-government system for employed professionals; a B2B MedTech platform with employee services; or a search & delivery engine for a manufacturer of industrial parts.
+                        <br>
+                        Since we work in Agile, we’re confident there’s a way to adjust to your company’s processes. The Software House also offers self-project-management through our PM to help with distributing project responsibilities. We can join a project at any stage of the software development life cycle.</p>
+                </div>
+            </div> 
+            <div class="faq-container">
+                <div class="faq-question">
+                    <div class="question-head">
+                    <h5>Do you offer teams for mobile app development?</h5>
+                    </div>
+                    <div class="quetion-icon">
+                    <svg class="question-more" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+                    <svg class="question-less" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M5 11V13H19V11H5Z"></path></svg>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>
+                        Yes. While most of our projects start with web development, clients can count on us for React Native or PWA mobile app development for Android / iOS devices. <br>
+                        
+                        ◈  Splitser, a bill-splitting app with over 1M+ downloads, became no. 1 in the Netherlands in the personal finance category after our upgrade from an MVP to a full product (case study). <br>
+                        ◈  The Software House’s mobile team also designed and crafted an app called Smartum to serve as an employee benefit platform in Finland. 96% of users rated it as something they’d recommend (case study). <br>
+                        If you need to expand your mobile team, contact us to discuss your plan and what you need to reach similar business results with your mobile apps.</p>
+                </div>
+            </div>
+            <div class="faq-container">
+                <div class="faq-question">
+                    <div class="question-head">
+                    <h5>What makes your software development process different?</h5>
+                    </div>
+                    <div class="quetion-icon">
+                    <svg class="question-more" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+                    <svg class="question-less" xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24" fill="currentColor"><path d="M5 11V13H19V11H5Z"></path></svg>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>We’re highly collaborative. From the early years, we shaped our software development firm to be an understanding and flexible partner that adjusts to the client’s development process. <br>
+
+                    We follow an Agile process that was refined over the 12 years since the founding. You set the metrics, help us grasp the business know-how, and our product team will present you with a predictable development plan with a clearly defined budget and deliverables. Should you need it, The Software House is ready to advise you on strategy, technology choice, and project management methods.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="second-last-foot">
+            <div class="last-fot">
+                <div class="last-fo-logo"><img style="width: 200px; height: 100px;" src="logo-de-removebg-preview.png" alt=""></div>
+                <div class="last-fo-icon">
+                    <svg class="ftli-icon" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24" fill="currentColor"><path d="M12.001 2C6.47813 2 2.00098 6.47715 2.00098 12C2.00098 16.9913 5.65783 21.1283 10.4385 21.8785V14.8906H7.89941V12H10.4385V9.79688C10.4385 7.29063 11.9314 5.90625 14.2156 5.90625C15.3097 5.90625 16.4541 6.10156 16.4541 6.10156V8.5625H15.1931C13.9509 8.5625 13.5635 9.33334 13.5635 10.1242V12H16.3369L15.8936 14.8906H13.5635V21.8785C18.3441 21.1283 22.001 16.9913 22.001 12C22.001 6.47715 17.5238 2 12.001 2Z"></path></svg>
+                    <svg class="ftli-icon" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24" fill="currentColor"><path d="M18.2048 2.25H21.5128L14.2858 10.51L22.7878 21.75H16.1308L10.9168 14.933L4.95084 21.75H1.64084L9.37084 12.915L1.21484 2.25H8.04084L12.7538 8.481L18.2048 2.25ZM17.0438 19.77H18.8768L7.04484 4.126H5.07784L17.0438 19.77Z"></path></svg>
+                    <svg class="ftli-icon" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24" fill="currentColor"><path d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z"></path></svg>
+                    <svg class="ftli-icon" xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24" fill="currentColor"><path d="M13.0281 2.00073C14.1535 2.00259 14.7238 2.00855 15.2166 2.02322L15.4107 2.02956C15.6349 2.03753 15.8561 2.04753 16.1228 2.06003C17.1869 2.1092 17.9128 2.27753 18.5503 2.52503C19.2094 2.7792 19.7661 3.12253 20.3219 3.67837C20.8769 4.2342 21.2203 4.79253 21.4753 5.45003C21.7219 6.0867 21.8903 6.81337 21.9403 7.87753C21.9522 8.1442 21.9618 8.3654 21.9697 8.58964L21.976 8.78373C21.9906 9.27647 21.9973 9.84686 21.9994 10.9723L22.0002 11.7179C22.0003 11.809 22.0003 11.903 22.0003 12L22.0002 12.2821L21.9996 13.0278C21.9977 14.1532 21.9918 14.7236 21.9771 15.2163L21.9707 15.4104C21.9628 15.6347 21.9528 15.8559 21.9403 16.1225C21.8911 17.1867 21.7219 17.9125 21.4753 18.55C21.2211 19.2092 20.8769 19.7659 20.3219 20.3217C19.7661 20.8767 19.2069 21.22 18.5503 21.475C17.9128 21.7217 17.1869 21.89 16.1228 21.94C15.8561 21.9519 15.6349 21.9616 15.4107 21.9694L15.2166 21.9757C14.7238 21.9904 14.1535 21.997 13.0281 21.9992L12.2824 22C12.1913 22 12.0973 22 12.0003 22L11.7182 22L10.9725 21.9993C9.8471 21.9975 9.27672 21.9915 8.78397 21.9768L8.58989 21.9705C8.36564 21.9625 8.14444 21.9525 7.87778 21.94C6.81361 21.8909 6.08861 21.7217 5.45028 21.475C4.79194 21.2209 4.23444 20.8767 3.67861 20.3217C3.12278 19.7659 2.78028 19.2067 2.52528 18.55C2.27778 17.9125 2.11028 17.1867 2.06028 16.1225C2.0484 15.8559 2.03871 15.6347 2.03086 15.4104L2.02457 15.2163C2.00994 14.7236 2.00327 14.1532 2.00111 13.0278L2.00098 10.9723C2.00284 9.84686 2.00879 9.27647 2.02346 8.78373L2.02981 8.58964C2.03778 8.3654 2.04778 8.1442 2.06028 7.87753C2.10944 6.81253 2.27778 6.08753 2.52528 5.45003C2.77944 4.7917 3.12278 4.2342 3.67861 3.67837C4.23444 3.12253 4.79278 2.78003 5.45028 2.52503C6.08778 2.27753 6.81278 2.11003 7.87778 2.06003C8.14444 2.04816 8.36564 2.03847 8.58989 2.03062L8.78397 2.02433C9.27672 2.00969 9.8471 2.00302 10.9725 2.00086L13.0281 2.00073ZM12.0003 7.00003C9.23738 7.00003 7.00028 9.23956 7.00028 12C7.00028 14.7629 9.23981 17 12.0003 17C14.7632 17 17.0003 14.7605 17.0003 12C17.0003 9.23713 14.7607 7.00003 12.0003 7.00003ZM12.0003 9.00003C13.6572 9.00003 15.0003 10.3427 15.0003 12C15.0003 13.6569 13.6576 15 12.0003 15C10.3434 15 9.00028 13.6574 9.00028 12C9.00028 10.3431 10.3429 9.00003 12.0003 9.00003ZM17.2503 5.50003C16.561 5.50003 16.0003 6.05994 16.0003 6.74918C16.0003 7.43843 16.5602 7.9992 17.2503 7.9992C17.9395 7.9992 18.5003 7.4393 18.5003 6.74918C18.5003 6.05994 17.9386 5.49917 17.2503 5.50003Z"></path></svg>
+                </div>
+            </div>
+            <div class="last-fot">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Web Development</a> </li>
+                    <li><a href="#">Mobile development</a> </li>
+                    <li><a href="#">Product Design</a> </li>
+                    <li><a href="#">Cloud Development</a> </li>
+                    <li><a href="#">Quality Assurance</a> </li>
+                    <li><a href="#">DevOps Services</a> </li>
+                    <li><a href="#">Software Architecture</a> </li>
+                </ul>
+            </div>
+            <div class="last-fot">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">React Development</a> </li>
+                    <li><a href="#">TypeScript Development</a> </li>
+                    <li><a href="#">Next.js Development</a> </li>
+                    <li><a href="#">Go Development</a> </li>
+                    <li><a href="#">Vue.js Development</a> </li>
+                    <li><a href="#">Symfony Development</a> </li>
+                    <li><a href="#">Laravel Development</a> </li>
+                </ul>
+            </div>
+            <div class="last-fot">
+                <h4>Knowledge</h4>
+                <ul>
+                    <li><a href="#">For CTOs</a> </li>
+                    <li><a href="#">Outsourcing guidebook</a> </li>
+                    <li><a href="#">Blog</a> </li>
+                    <li><a href="#">State of Microservices</a> </li>
+                    <li><a href="#">State of Frontend</a>  </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-left">
+                <p class="left-left">2024 The Software House </p>
+                <p class="left-right">All rights reserved</p>
+            </div>
+            <div class="footer-right">
+                <a class="right-left" href="#">EU Funds</a>
+                <a class="right-right" href="#">Privacy policy</a>
+                <a class="right-right" href="#">Terms of service</a>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+    </main>
+    <script src="software.js"></script>
+</body>
+</html>
