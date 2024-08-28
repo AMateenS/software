@@ -1,11 +1,3 @@
-    function showsidebar(){
-        const sidebar=document.querySelector('.sidebar');
-        sidebar.style.display='flex';
-    }
-    function hidesidebar(){
-        const sidebar=document.querySelector('.sidebar');
-        sidebar.style.display='none';
-    }
     function showsignpage(){
         const signup=document.querySelector('.navsignup');
         signup.style.display='flex';
@@ -14,7 +6,28 @@
         const signup=document.querySelector('.navsignup');
         signup.style.display='none';
     }
-    $('.work').owlCarousel({
+     document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.querySelector(".show-menu");
+    const closeIcon = document.querySelector(".close");
+    const animatedElement = document.querySelector(".sidebar");
+
+    menuIcon.classList.add("show");
+    closeIcon.classList.remove("show");
+
+    menuIcon.addEventListener("click", function() {
+        animatedElement.classList.add("show");
+        menuIcon.classList.remove("show");
+        closeIcon.classList.add("show");
+    });
+
+    closeIcon.addEventListener("click", function() {
+        animatedElement.classList.remove("show");
+        closeIcon.classList.remove("show");
+        menuIcon.classList.add("show");
+    });
+});
+
+    $('.owl-carousel').owlCarousel({
 loop:true,
 nav:true,
 dot:true,
@@ -32,22 +45,6 @@ responsive:{
 }
 }
 })
-function showmore(){
-    const project_more=document.querySelector('.project-more');
-    project_more.style.display='flex';
-    const less=document.querySelector('.less');
-    less.style.display='flex';
-    const more=document.querySelector('.more');
-    more.style.display='none';
-}
-function showless(){
-    const project_more=document.querySelector('.project-more');
-    project_more.style.display='none';
-    const less=document.querySelector('.less');
-    less.style.display='none';
-    const more=document.querySelector('.more');
-    more.style.display='flex';
-}
 const faq_container=document.querySelectorAll('.faq-container');
 faq_container.forEach(contain=>{
     const faq_question=contain.querySelector('.faq-question');
